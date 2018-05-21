@@ -19,10 +19,18 @@
   },
   "homepage": "https://github.com/kylebustard/ReactBlog#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-async-to-promises": "^1.0.5",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "npm": "^6.0.1",
     "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "css-loader": "^0.28.11",
     "extract-loader": "^2.0.1",
     "file-loader": "^1.1.11",
