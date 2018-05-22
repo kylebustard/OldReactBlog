@@ -17,6 +17,7 @@ module.exports = {
     overlay: true,
     hot: true
   },
+  devtool: "sourc-map",
   module: {
     rules: [
       {
