@@ -14,13 +14,16 @@ require("webpack-dev-middleware")(
 )
 
 const webpackHotMiddleware = 
-require("webpack-hot-middleware")(compiler)
+require("webpack-hot-middleware")(
+  compiler,
+  config.devServer
+)
 
 server.use(webpackDevMiddleware)
 server.use(webpackHotMiddleware)
+console.log("Middleware enabled")
 
 const staticMiddleware = express.static("dist")
-
 server.use(staticMiddleware)
 
 server.listen(8080, () => {
